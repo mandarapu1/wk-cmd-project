@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Demo onConfirm popup </title>
+</head>
+<body>
+<h2>Confirm Box Example</h2>
+<fieldset>
+<legend>Confirm Box</legend>
+<p>Click the button to display a confirm box.</p>
+<button onclick="confirmFunction()">click on me</button>
+<p id="confirmdemo"></p>
+<script>
+function confirmFunction()
+{
+var cb;
+var c=confirm("hey i need your confirmation.\n press any button !");
+if(c== true)
+ {
+ cb="You Clicked on ok!";
+ }
+else
+ {
+ cb="You Clicked on cancel!";
+ }
+document.getElementById("confirmdemo").innerHTML=cb;
+}
+</script>
+</fieldset>
+</body>
+</html>
